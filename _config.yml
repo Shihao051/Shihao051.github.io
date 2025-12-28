@@ -28,9 +28,9 @@ author:
   pronouns         : "He/Him"  
   bio              : "Short biography for the left-hand sidebar"
   location         : "Earth"
-  employer         : "Red Brick University"
+  employer         : # "Red Brick University"
   uri              : # URL
-  email            : "none@example.org" 
+  email            : "shz051@ucsd.edu" 
 
   # Academic websites
   academia         : # URL
