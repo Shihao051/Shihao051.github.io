@@ -1,43 +1,35 @@
 ---
-layout: collection
-collection: publications
+layout: archive
 title: "Publications"
 permalink: /publications/
 author_profile: true
 ---
 
-{% comment %}
-  Optional Google Scholar link at the top
-{% endcomment %}
 {% if site.author.googlescholar %}
-  <div class="wordwrap" style="margin-bottom: 1em;">
-    You can also find my articles on 
-    <a href="{{ site.author.googlescholar }}" target="_blank">my Google Scholar profile</a>.
-  </div>
+  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
 {% endif %}
 
-{% comment %}
-  Render all publications in _publications/ automatically.
-  Each paper should have its own Markdown file with front matter:
-    - title
-    - collection: publications
-    - permalink (e.g., /publications/low-rank-theory)
-    - date
-    - venue
-    - paperurl
-    - arxivurl
-    - authors
-{% endcomment %}
+{% include base_path %}
 
-{% for post in site.publications reversed %}
-  <div class="publication-item" style="margin-bottom: 1.2em;">
-    <strong>{{ post.authors }}</strong><br>
-    <em>{{ post.title }}</em><br>
-    {% if post.venue %}{{ post.venue }}<br>{% endif %}
-    {% comment %}Links for journal / arXiv{% endcomment %}
-    {% if post.paperurl %}[Journal]({{ post.paperurl }}){% endif %}
-    {% if post.paperurl and post.arxivurl %} · {% endif %}
-    {% if post.arxivurl %}[arXiv]({{ post.arxivurl }}){% endif %}
-  </div>
-{% endfor %}
+<!-- New style rendering if publication categories are defined -->
+{% if site.publication_category %}
+  {% for category in site.publication_category  %}
+    {% assign title_shown = false %}
+    {% for post in site.publications reversed %}
+      {% if post.category != category[0] %}
+        {% continue %}
+      {% endif %}
+      {% unless title_shown %}
+        <h2>{{ category[1].title }}</h2><hr />
+        {% assign title_shown = true %}
+      {% endunless %}
+      {% include archive-single.html %}
+    {% endfor %}
+  {% endfor %}
+{% else %}
+  {% for post in site.publications reversed %}
+    {% include archive-single.html %}
+  {% endfor %}
+{% endif %}
+
 
