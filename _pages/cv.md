@@ -11,27 +11,19 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* Ph.D in Mathematics, University of California, San Diego, Expected Mar 2027 
+* B.S. in Mathematics and Applied Mathematics, Fudan University, Sep. 2017 – Jun. 2021 
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* Jun. 2026 – Sep. 2026: Interim Engineering Intern
+  * Qualcomm Incorporated | AI Research (AIR) Morpheus Team
+  * Mentor: Roohollah Amiri | Manager: Will Zeng
+  * Conduct LLM/VLM quantization research in the Morpheus team (QuantCore group). 
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
+{% comment %}
+
 Skills
 ======
 * Skill 1
@@ -40,8 +32,6 @@ Skills
   * Sub-skill 2.2
   * Sub-skill 2.3
 * Skill 3
-
-{% comment %}
 
 Publications
 ======
