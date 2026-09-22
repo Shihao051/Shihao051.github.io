@@ -16,9 +16,9 @@ Education
 
 Work experience
 ======
-* Jun. 2026 – Sep. 2026: Interim Engineering Intern
-  * Qualcomm Incorporated | AI Research (AIR) Morpheus Team
-  * Mentor: Roohollah Amiri | Manager: Will Zeng
+* Jun. 2026 – Sep. 2026: Interim Engineering Intern, Qualcomm Incorporated
+  * AI Research (AIR) Morpheus Team
+  * Supervisors: Roohollah Amiri, Will Zeng
   * Conduct LLM/VLM quantization research in the Morpheus team (QuantCore group). 
 
 
